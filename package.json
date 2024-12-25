@@ -1,0 +1,50 @@
+{
+  "name": "@pruthvii09/ik-pruthvi-usersnap1",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "umd": "dist/popup-tool.umd.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pruthvii09/ik-pruthvi-usersnap1.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "popup",
+    "react",
+    "modal",
+    "dialog"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A simple and reusable popup component for React and vanilla JavaScript",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.29.1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4"
+  }
+}
